@@ -1,0 +1,11 @@
+```
+function hammingWeight($weight)
+{
+    $array = str_split(decbin($weight));
+    $amount = 0;
+    foreach ($array as $value) {
+        $amount += $value;
+    }
+    return $amount;
+}
+```
