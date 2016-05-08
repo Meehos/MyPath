@@ -1,0 +1,18 @@
+Реализуйте и экспортируйте функцию isPowerOfThree которая определяет, является ли переданное число натуральной степенью тройки. Например число 27 это третья степень (33), а 81 это четвертая (34).
+
+Пример:
+
+isPowerOfThree(1); // true (3^0)
+isPowerOfThree(2); // false
+isPowerOfThree(9); // true (3^2)
+
+// BEGIN (write your solution here)
+export const isPowerOfThree = (num) => {
+  for (let n = 0; n<=num; n++) {
+    if(Math.pow(3,n)===num){
+     return true;
+    }
+  }
+  return false;
+}
+// END
